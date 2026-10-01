@@ -832,7 +832,7 @@ CLICKHOUSE,
     {
         $partitions = $this->partitions($tableName);
         $out = [];
-        foreach ($partions as $part_key => $part) {
+        foreach ($partitions as $part_key => $part) {
             $part_id = $part['partition'];
             $out[$part_id] = $this->dropPartition($tableName, $part_id);
         }
